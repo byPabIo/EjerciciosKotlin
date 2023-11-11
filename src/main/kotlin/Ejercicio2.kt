@@ -8,18 +8,18 @@ es múltiplo de 20 y está entre -100 y 100”- “No es múltiplo de 20 y no es
 
 fun main() {
     print("Ingrese un número entero: ")
-    val num = readLine()?.toInt() ?:0
+    val num = readLine()?.toInt() ?: 0
 
-    if (num%20 == 0){
-        if (num<100 && num>-100){
+    if (num % 20 == 0) {
+        if (num < 100 && num > -100) {
             println("Es múltiplo de 20 y está entre -100 y 100")
-        } else{
+        } else {
             println("Es múltiplo de 20 y no está entre -100 y 100")
         }
-    } else{
-        if (num<100 && num>-100){
+    } else {
+        if (num < 100 && num > -100) {
             println("No es múltiplo de 20 y está entre -100 y 100")
-        } else{
+        } else {
             println("No es múltiplo de 20 y no está entre -100 y 100")
         }
     }

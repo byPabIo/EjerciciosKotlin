@@ -11,19 +11,19 @@ fun main() {
     var intentos = 0
     var adivinado = false
 
-    while (!adivinado){
-        print("Ingresa un número para jugar: ")
+    while (!adivinado) {
+        print("Ingresa un número para jugar: ");
         val numero = readLine()?.toIntOrNull()
-            if (numero != null){
-                intentos++
-                if (numero == numeroAleatorio){
-                    adivinado = true
-                    print("¡¡¡Enhorabuena, has acertado el número en $intentos intentos!!!")
-                } else{
-                    println("Lo siento, intentalo de nuevo!")
-                }
-            } else{
-                print("Por favor, ingresa un número valido")
+        if (numero != null) {
+            intentos++
+            if (numero == numeroAleatorio) {
+                adivinado = true
+                print("¡¡¡Enhorabuena, has acertado el número en $intentos intentos!!!")
+            } else {
+                println("Lo siento, intentalo de nuevo!")
             }
+        } else {
+            print("Por favor, ingresa un número valido")
+        }
     }
 }
